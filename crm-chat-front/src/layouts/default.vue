@@ -1,14 +1,13 @@
 <template>
   <v-app>
-    <Menu />
+    <AppNavigation />
     <v-main>
       <router-view />
     </v-main>
-
     <AppFooter />
   </v-app>
 </template>
 
 <script setup>
-  import Menu from '@/layouts/Menu.vue';
+  import AppNavigation from '@/components/app/AppNavigation.vue';
 </script>

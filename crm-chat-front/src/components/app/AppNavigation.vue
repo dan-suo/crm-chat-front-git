@@ -1,7 +1,5 @@
 <template>
-  <v-card>
-    <v-layout>
-      <v-navigation-drawer
+    <v-navigation-drawer
         v-model="drawer"
         :rail="rail"
         permanent
@@ -26,15 +24,16 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav>
-          <v-list-item prepend-icon="mdi-text" title="Чаты" value="chats"></v-list-item>
+          <v-list-item 
+            v-for="navigationItem in navigationItems" 
+            :key="navigationItem.id" 
+            :prepend-icon="navigationItem.icon" 
+            :title="navigationItem.title" 
+            :value="navigationItem.value"
+            >
+          </v-list-item>
         </v-list>
-      </v-navigation-drawer>
-      <v-main style="height: 100vh">
-        <br>
-        <p class="ml-2">There is our project</p>
-      </v-main>
-    </v-layout>
-  </v-card>
+    </v-navigation-drawer>
 </template>
 
 <script>
@@ -46,4 +45,19 @@
       }
     },
   }
+</script>
+
+<script setup>
+
+  import {ref} from 'vue'
+
+  const navigationItems = ref([
+    {
+      id: 1,
+      title: 'Чаты',
+      icon: 'mdi-text',
+      value: 'chats'
+    }
+  ]) 
+  
 </script>
