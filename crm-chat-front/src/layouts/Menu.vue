@@ -29,7 +29,10 @@
           <v-list-item prepend-icon="mdi-text" title="Чаты" value="chats"></v-list-item>
         </v-list>
       </v-navigation-drawer>
-      <v-main style="height: 100vh"></v-main>
+      <v-main style="height: 100vh">
+        <br>
+        <p class="ml-2">There is our project</p>
+      </v-main>
     </v-layout>
   </v-card>
 </template>
