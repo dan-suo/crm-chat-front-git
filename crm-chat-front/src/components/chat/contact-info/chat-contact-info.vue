@@ -5,31 +5,26 @@
 <template>
   <v-card
     height="100%"
+    overflow="auto"
   >
     <v-card-title>Имя пользователя</v-card-title>
     <v-card-subtitle>Новый пользователь</v-card-subtitle>
-    <v-img src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"></v-img>
+    <v-img src="https://cdn.vuetifyjs.com/images/cards/coffee.jpg"></v-img>
     <v-divider class="my-4"></v-divider>
-    <v-card
-      append-icon="mdi-open-in-new"
-      class="mx-auto"
-      href="/"
-      prepend-icon="mdi-twitter"
-      rel="noopener"
-      subtitle="Имя ответственного"
-      target="_blank"
-      title="Ответственный"
-    ></v-card>
+    <div class="ma-4">
+      <h3>Ответственный</h3>
+      <h2>Имя ответственного</h2>
+    </div>
   <v-divider class="my-4">
   </v-divider>
-    <v-card
+    <div
       class="pa-4"
     >
       <p>Информация</p>
       <p>Напомнить</p>
       <p>Удалить</p>
       <p>Удалить чат</p>
-      <p>Пригласить</p>
-    </v-card>
+      <p>Сделать заметку</p>
+   </div>
   </v-card>
 </template>
