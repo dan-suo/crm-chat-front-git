@@ -6,7 +6,9 @@
     <div>
       <ChatMessages />
     </div>
-    <div>Info</div>
+    <div>
+      <chat-contact-info />
+    </div>
   </div>
 </template>
 
