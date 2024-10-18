@@ -2,9 +2,9 @@
     <v-navigation-drawer
         v-model="drawer"
         :rail="rail"
-        permanent
         @click="rail = false"
         class="transition cursor-pointer"
+        absolute
       >
         <v-list-item
           prepend-avatar="https://randomuser.me/api/portraits/men/46.jpg"
@@ -53,7 +53,7 @@
   import {ref, reactive} from 'vue'
 
   const navigationItems = reactive([
-    
+
     {
       id: 1,
       title: 'Чаты',

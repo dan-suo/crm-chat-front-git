@@ -1,9 +1,16 @@
 <template>
   <v-card
     class="pa-2"
-    style="height: 100vh"
-    max-width="300"
+    height="100%"
+    max-width="370"
   >
+  <v-text-field
+            label="Outlined"
+            placeholder="Placeholder"
+            variant="outlined"
+            class="mt-4 mx-4"
+          ></v-text-field>
+  <div class="overflow-auto" >
     <v-list>
       <v-list-subheader>Мои диалоги</v-list-subheader>
 
@@ -21,6 +28,7 @@
         <v-list-item-title>{{ item.text }}</v-list-item-title>
       </v-list-item>
     </v-list>
+  </div>
   </v-card>
 </template>
 
