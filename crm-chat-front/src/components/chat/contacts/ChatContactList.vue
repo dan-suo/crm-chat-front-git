@@ -2,14 +2,15 @@
   <v-card
     class="pa-2"
     height="100%"
-    max-width="370"
   >
   <v-text-field
-            label="Outlined"
-            placeholder="Placeholder"
-            variant="outlined"
-            class="mt-4 mx-4"
-          ></v-text-field>
+    label="Начать поиск"
+    placeholder="Ищем ..."
+    variant="outlined"
+    class="mt-4 mx-4"
+  >
+  </v-text-field>
+
   <div class="overflow-auto" >
     <v-list>
       <v-list-subheader>Мои диалоги</v-list-subheader>

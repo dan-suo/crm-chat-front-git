@@ -1,9 +1,11 @@
 <template>
   <div class="fill-height grid">
-    <div >
+    <div>
       <ChatContactList />
     </div>
-    <div>Messages</div>
+    <div>
+      <ChatMessages />
+    </div>
     <div>Info</div>
   </div>
 </template>
@@ -16,6 +18,10 @@ import ChatContactList from "@/components/chat/contacts/ChatContactList.vue";
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  width:100%;
+  width: 100%;
+}
+
+.left-0 {
+  left:0;
 }
 </style>

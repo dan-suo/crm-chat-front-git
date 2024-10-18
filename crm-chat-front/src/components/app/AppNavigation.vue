@@ -4,8 +4,8 @@
         :rail="rail"
         @click="rail = false"
         class="transition cursor-pointer"
-        absolute
-      >
+        permanent
+    >
         <v-list-item
           prepend-avatar="https://randomuser.me/api/portraits/men/46.jpg"
           class="ml-2"
