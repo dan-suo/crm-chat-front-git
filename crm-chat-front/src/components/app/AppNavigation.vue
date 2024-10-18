@@ -17,7 +17,8 @@
               icon="mdi-chevron-left"
               variant="text"
               @click.stop="rail = !rail"
-            ></v-btn>
+            >
+            </v-btn>
           </template>
         </v-list-item>
 
@@ -49,15 +50,28 @@
 
 <script setup>
 
-  import {ref} from 'vue'
+  import {ref, reactive} from 'vue'
 
-  const navigationItems = ref([
+  const navigationItems = reactive([
+    
     {
       id: 1,
       title: 'Чаты',
       icon: 'mdi-text',
       value: 'chats'
+    },
+    {
+      id: 2,
+      title: 'Аккаунт',
+      icon: 'mdi-account-box',
+      value: 'account'
+    },
+    {
+      id: 3,
+      title: 'Музыка',
+      icon: 'mdi-music-note-eighth',
+      value: 'music'
     }
-  ]) 
-  
+  ])
+
 </script>
